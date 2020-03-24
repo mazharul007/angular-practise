@@ -19,3 +19,4 @@ import { BindingsComponent } from './bindings/bindings.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
