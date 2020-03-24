@@ -1,0 +1,45 @@
+<h3>Property,class,style,event and two way binding</h3>
+<label>Property Binding</label>
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input [disabled]="!isDisable" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+</form>
+<hr>
+<label>Class Binding</label>
+<h5 [class.text-success]="hasNoError">#Success</h5>
+<h5 [ngClass]="specialClass">#Primary and special</h5>
+<h5 [class.text-danger]="hasError">#Danger</h5>
+<hr>
+
+<label>Style Binding</label>
+<h5 [ngStyle]="styleProp">***Style One</h5>
+<hr>
+
+<label>Event Binding</label><br>
+<button class="btn btn-primary" (click)="onClick()">Click Me</button>
+<h5 [class.text-success]="hasNoError">{{welcomeMsg}}</h5>
+<button (click)="welcomeMsg2='Hello Mazharul Hoque Naumy'" class="btn btn-success">Click Me Again</button>
+<h5>{{welcomeMsg2}}</h5>
+<hr>
+
+<label>Template Reference Variable</label>
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input #logIn type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+</form>
+<button (click)="submit(logIn.value)" class="btn btn-warning">Log In</button>
+<h5>{{email}}</h5>
+<hr>
+<label>Two way binding</label>
+
+    <input [(ngModel)]="userEmail" type="email" placeholder="type your email here"> {{userEmail}}
+
+
+
+
+
+
