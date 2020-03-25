@@ -1,7 +1,9 @@
 <div class="container">
-  <h2 class="text-center" style="color: forestgreen; font-weight: bold;">{{title}}</h2>
+  <h2 class="text-center" style="color: forestgreen; font-weight: bold;">{{utubeChannelName}}</h2>
   <app-string-interpolation class="text-center"></app-string-interpolation>
   <hr>
   <app-bindings class="text-center"></app-bindings>
   <app-directives class="text-center"></app-directives>
+  <app-others class="text-center" [parentData]="channelName" (childEvent)="utubeChannelName=$event"></app-others>
+  <hr>
 </div>

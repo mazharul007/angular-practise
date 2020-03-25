@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { BindingsComponent } from './bindings/bindings.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { OthersComponent } from './others/others.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StringInterpolationComponent,
     BindingsComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    OthersComponent
   ],
   imports: [
     BrowserModule,
