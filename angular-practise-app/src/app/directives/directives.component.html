@@ -1,0 +1,20 @@
+
+<hr>
+<label for="">Structural Directive:ngIf</label>
+<h3 *ngIf="displayName; else elseBlock">Mazharul Hoque Naumy</h3>
+
+<ng-template #elseBlock>
+    <h2>John Doe</h2>
+</ng-template>
+<hr>
+<label for="">ngSwitch</label>
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">Red Color have been picked</div>
+    <div *ngSwitchCase="'green'">green Color have been picked</div>
+    <div *ngSwitchCase="'blue'">blue Color have been picked</div>
+    <div *ngSwitchDefault>Didn't pick any color. Try again</div>
+</div>
+<label>ngFor</label>
+<div *ngFor="let color of colors; index as i">
+    <div>{{i}} : {{color}}</div>
+</div>

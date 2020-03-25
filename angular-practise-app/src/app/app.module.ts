@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { BindingsComponent } from './bindings/bindings.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StringInterpolationComponent,
-    BindingsComponent
+    BindingsComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
